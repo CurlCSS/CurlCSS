@@ -1,6 +1,6 @@
 # Getting started with Curlcss
 
-Developed by https://github.com/b0bbycode
+Developed by https://github.com/Curlcss
 Version [1.0.1]
 
 # Description
