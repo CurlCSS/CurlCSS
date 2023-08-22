@@ -1,0 +1,106 @@
+/* image-gallery.css */
+
+/* Base styles for the image gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Responsive styles for the image gallery */
+  @media screen and (max-width: 768px) {
+    .image-gallery {
+      flex-direction: column;
+    }
+  }
+  
+  /* Styles for the main image display */
+  .image-gallery .main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* Styles for the thumbnail navigation */
+  .image-gallery .thumbnail-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .image-gallery .thumbnail-nav .thumbnail {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-gallery .thumbnail-nav .thumbnail:hover {
+    opacity: 1;
+  }
+  
+  .image-gallery .thumbnail-nav .thumbnail.active {
+    opacity: 1;
+    border: 2px solid #000;
+  }
+  
+  /* Styles for the lightbox overlay */
+  .image-gallery .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Styles for the lightbox image */
+  .image-gallery .lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  /* Styles for the lightbox close button */
+  .image-gallery .lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Styles for keyboard navigation */
+  .image-gallery .thumbnail:focus {
+    outline: none;
+    border: 2px solid #000;
+  }
+  
+  /* Styles for lazy loading */
+  .image-gallery .thumbnail img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-gallery .thumbnail.loaded img {
+    opacity: 1;
+  }
+  
+  /* Styles for image filtering or categorization */
+  .image-gallery .filter-button {
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-gallery .filter-button.active {
+    opacity: 1;
+  }
+  

@@ -1,0 +1,81 @@
+/* lists.css */
+
+/* Unordered List */
+ul {
+    padding-left: 20px;
+  }
+  
+  /* Ordered List */
+  ol {
+    padding-left: 20px;
+  }
+  
+  /* List Item */
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Inline List */
+  .inline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .inline-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* List with Icons */
+  .list-with-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-with-icons li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .list-with-icons li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+  
+  /* List Styles Reset */
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* List Item Alignment */
+.li-vertical {
+    display: block;
+  }
+  
+  .li-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Nested Lists */
+ul ul,
+ol ol {
+  padding-left: 20px;
+}
+
+/* List Item Highlight */
+.li-active {
+    background-color: #f8f8f8;
+  }
+  

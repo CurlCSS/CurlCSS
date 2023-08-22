@@ -1,0 +1,180 @@
+/* flexbox.css */
+
+/* Flex container */
+.flex-container {
+    display: flex;
+  }
+  
+  /* Flex direction */
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+  
+  /* Flex wrap */
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  
+  .flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  
+  /* Justify content */
+  .justify-start {
+    justify-content: flex-start;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  /* Align items */
+  .align-start {
+    align-items: flex-start;
+  }
+  
+  .align-end {
+    align-items: flex-end;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .align-baseline {
+    align-items: baseline;
+  }
+  
+  .align-stretch {
+    align-items: stretch;
+  }
+  
+  /* Align self */
+  .align-self-start {
+    align-self: flex-start;
+  }
+  
+  .align-self-end {
+    align-self: flex-end;
+  }
+  
+  .align-self-center {
+    align-self: center;
+  }
+  
+  .align-self-baseline {
+    align-self: baseline;
+  }
+  
+  .align-self-stretch {
+    align-self: stretch;
+  }
+  
+  /* Responsive Flexbox Utilities */
+  @media screen and (max-width: 768px) {
+    .flex-sm-row {
+      flex-direction: row;
+    }
+    
+    .flex-sm-column {
+      flex-direction: column;
+    }
+    
+    /* Add more responsive utility classes as needed */
+  }
+  
+  @media screen and (max-width: 992px) {
+    .flex-md-row {
+      flex-direction: row;
+    }
+    
+    .flex-md-column {
+      flex-direction: column;
+    }
+    
+    /* Add more responsive utility classes as needed */
+  }
+  
+  /* Flexbox Alignment Shorthand */
+  .center-both {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .start-end {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  
+  /* Flexbox Grid System */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  
+  /* Flexbox Helpers */
+  .equal-height {
+    display: flex;
+  }
+  
+  .equal-height > * {
+    flex: 1;
+  }
+  
+  .order-1 {
+    order: 1;
+  }
+  
+  .order-2 {
+    order: 2;
+  }
+  
+  /* Example usage */
+  .container {
+    /* Flex container */
+    display: flex;
+    
+    /* Flex direction */
+    flex-direction: row;
+    
+    /* Justify content */
+    justify-content: center;
+    
+    /* Align items */
+    align-items: center;
+  }
+  

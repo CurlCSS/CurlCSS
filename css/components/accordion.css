@@ -1,0 +1,57 @@
+/* accordion.css */
+
+.ac {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.at {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ac[aria-expanded="true"] .at {
+  background-color: #ccc;
+}
+
+.ac[aria-expanded="false"] .ac-c {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.ac[aria-expanded="true"] .ac-c {
+  padding: 10px;
+  margin: 10px 0;
+  height: auto;
+  overflow: visible;
+  transition: height 0.3s ease-in-out;
+}
+
+.ac-c {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.ac-c p {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .at {
+    font-size: 14px;
+  }
+  
+  .ac-c p {
+    font-size: 14px;
+  }
+}

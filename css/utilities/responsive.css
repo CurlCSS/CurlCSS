@@ -1,0 +1,31 @@
+/* responsive.css */
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 767px) {
+    /* Styles for small screens */
+    .hide-sm {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens */
+    .hide-md {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large screens */
+    .hide-lg {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* Styles for extra-large screens */
+    .hide-xl {
+      display: none;
+    }
+  }
+  

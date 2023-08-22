@@ -1,0 +1,83 @@
+/* forms.css */
+
+/* Form Container */
+.form-container {
+    margin: 20px;
+  }
+  
+  /* Form Fields */
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  /* Form Label */
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Form Input */
+  .form-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Form Textarea */
+  .form-textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Form Select */
+  .form-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Form Checkbox */
+  .form-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Form Radio Button */
+  .form-radio {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Form Submit Button */
+  .form-submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Form Error Message */
+  .form-error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  /* Form Success Message */
+  .form-success {
+    color: green;
+    margin-top: 5px;
+  }
+  

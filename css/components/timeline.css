@@ -1,0 +1,127 @@
+/* timeline.css */
+
+.timeline {
+    position: relative;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+  
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .timeline-item .timeline-content {
+    margin-left: 20px;
+  }
+  
+  .timeline-item .timeline-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item .timeline-description {
+    color: #888;
+  }
+  
+  .timeline-item .timeline-date {
+    color: #aaa;
+  }
+  
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .timeline-item:nth-child(odd):before {
+    background-color: #f00;
+  }
+  
+  .timeline-item:nth-child(even):before {
+    background-color: #00f;
+  }
+  
+  /* timeline.css */
+
+/* Addition 1: Responsiveness */
+@media screen and (max-width: 768px) {
+    .timeline-item {
+      padding-left: 15px;
+    }
+  
+    .timeline-item:before {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
+  /* Addition 2: Accessibility */
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .timeline-item:focus:before,
+  .timeline-item:hover:before {
+    background-color: #f00;
+  }
+  
+  /* Addition 3: Transitions and animations */
+  .timeline-item {
+    transition: margin-bottom 0.3s ease;
+  }
+  
+  /* Addition 4: Customization options */
+  .timeline-item .timeline-content {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .timeline-item .timeline-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .timeline-item .timeline-description {
+    color: #888;
+  }
+  
+  .timeline-item .timeline-date {
+    color: #aaa;
+  }
+  
+  /* Addition 5: Error handling */
+  .timeline-error {
+    color: red;
+  }
+  
+  /* Addition 6: Compatibility */
+  .timeline-item:before {
+    /* Vendor prefixes for compatibility */
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+  

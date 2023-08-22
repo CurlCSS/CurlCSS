@@ -1,0 +1,49 @@
+/* visibility.css */
+
+/* Display Classes */
+.hidden {
+    display: none !important;
+  }
+  
+  .block {
+    display: block !important;
+  }
+  
+  .inline {
+    display: inline !important;
+  }
+  
+  .inline-block {
+    display: inline-block !important;
+  }
+  
+  /* Visibility Classes */
+  .invisible {
+    visibility: hidden !important;
+  }
+  
+  .visible {
+    visibility: visible !important;
+  }
+  
+  /* Opacity Classes */
+  .opacity-0 {
+    opacity: 0 !important;
+  }
+  
+  .opacity-25 {
+    opacity: 0.25 !important;
+  }
+  
+  .opacity-50 {
+    opacity: 0.5 !important;
+  }
+  
+  .opacity-75 {
+    opacity: 0.75 !important;
+  }
+  
+  .opacity-100 {
+    opacity: 1 !important;
+  }
+  

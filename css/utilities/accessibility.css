@@ -1,0 +1,66 @@
+/* accessibility.css */
+
+/* Hide elements visually but keep them accessible for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  /* Hide elements only visually but keep them accessible for screen readers */
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /* Apply focus styles only when focus is triggered by keyboard navigation */
+  .js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+  }
+  
+  /* Add focus styles for elements when focused using keyboard */
+  .focus-visible {
+    outline: 2px solid #4d90fe;
+    outline-offset: 3px;
+  }
+  
+  /* Disable animations for users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0s !important;
+      transition-duration: 0s !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .skip-link:focus {
+    top: 0;
+  }
+
+
+  /* Keyboard navigation indicators */
+:focus {
+    /* Styles for focused elements */
+  }
+  
+  [role="button"]:focus,
+  [role="checkbox"]:focus,
+  [role="radio"]:focus,
+  [role="tab"]:focus {
+    /* Additional styles for focused interactive elements */
+  }
+  
+  

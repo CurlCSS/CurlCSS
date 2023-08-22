@@ -1,0 +1,52 @@
+/* 
+================================================ tooltip.css
+*/
+
+/* Basic styles for the tooltip */
+.tooltip {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* Styles for the content of the tooltip */
+.tooltip-inner {
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Styles for the tooltip when it's fading in */
+.tooltip.fade {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Styles for the tooltip when it's fully visible */
+.tooltip.show {
+  opacity: 1;
+}
+
+/* Example usage */
+.tooltip-trigger {
+  position: relative;
+  display: inline-block;
+  color: #3fd33f !important;
+}
+
+.tooltip-trigger:hover .tooltip {
+  display: block;
+}
+
+.tooltip-trigger:hover .tooltip.fade {
+  opacity: 1;
+}
